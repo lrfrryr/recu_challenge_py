@@ -6,7 +6,7 @@ Pequeño análisis del dataset proporcionado, que brinda la información requeri
 ## Jupyter Notebook
 
 ### Prerequisitos
-Para poder correr el archivo .ipynb es necesario tener Jupyter instalado. Se puede instalar tanto en Windows, Linux y macOS usando Anaconda [acá](https://www.anaconda.com/products/individual) o pip (teniendo instalado python):
+Para poder correr el archivo .ipynb es necesario tener Jupyter instalado. Se puede instalar tanto en Windows, Linux y macOS usando Anaconda [acá](https://www.anaconda.com/products/individual) o pip (teniendo instalado Python):
 
 ```
 pip install notebook
@@ -35,5 +35,5 @@ Para ver una versión no interactiva del código (ya corrido y con los resultado
 Para poder ver el notebook de manera interactiva pero sin correrlo localmente se puede visitar [este](https://colab.research.google.com/drive/1Nckkgdk7TFeu0ncLj98Xih_golvZD3aL?usp=sharing) link de Google Colab. 
 
 ## Gif
-A continuación incluí un gif de la ejecución:
+A continuación incluí un gif de la ejecución:  
 ![](https://github.com/lrfrryr/recu_challenge_py/blob/main/socios.gif)
