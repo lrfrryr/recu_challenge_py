@@ -36,4 +36,4 @@ Para poder ver el notebook de manera interactiva pero sin correrlo localmente se
 
 ## Gif
 A continuación incluí un gif de la ejecución:
-
+![](https://github.com/lrfrryr/recu_challenge_py/blob/main/socios.gif)
