@@ -5,7 +5,7 @@ Pequeño análisis del dataset proporcionado, que brinda la información requeri
 
 ## Jupyter Notebook
 
-### Prerequisitos
+### Prerrequisitos
 Para poder ejecutar el archivo .ipynb es necesario tener Jupyter instalado. Se puede instalar tanto en Windows, Linux y macOS usando Anaconda [acá](https://www.anaconda.com/products/individual) o pip (teniendo instalado Python):
 
 ```
@@ -32,7 +32,7 @@ El script va a leer el archivo csv e imprimir el resultado en la terminal.
 Para ver una versión no interactiva del código (ya ejecutado y con los resultados) se puede abrir el archivo .html incluído en el repositorio.
 
 ## Google Colab - Interactivo
-Para poder ver el notebook de manera interactiva pero sin ejecutarlo localmente se puede visitar [este](https://colab.research.google.com/drive/1Nckkgdk7TFeu0ncLj98Xih_golvZD3aL?usp=sharing) link de Google Colab que tiene el código y subir el archivo socios.csv para que pueda ejecutarse correctamente. 
+Para poder ver el notebook de manera interactiva pero sin ejecutarlo localmente se puede visitar [este](https://colab.research.google.com/drive/1Nckkgdk7TFeu0ncLj98Xih_golvZD3aL?usp=sharing) link de Google Colab. Es necesario subir el archivo socios.csv para que pueda ejecutarse correctamente. 
 
 ## Gif
 A continuación incluí un gif de la ejecución:  
