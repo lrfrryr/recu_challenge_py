@@ -14053,13 +14053,13 @@ Universitarios, ordenadas de menor a mayor según su edad. Por cada persona, mos
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">socios</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># socios.info()</span>
 </pre></div>
 
      </div>
@@ -14067,47 +14067,15 @@ Universitarios, ordenadas de menor a mayor según su edad. Por cada persona, mos
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-RangeIndex: 50000 entries, 0 to 49999
-Data columns (total 5 columns):
- #   Column             Non-Null Count  Dtype 
----  ------             --------------  ----- 
- 0   Nombre             50000 non-null  object
- 1   Edad               50000 non-null  int64 
- 2   Equipo             50000 non-null  object
- 3   Estado Civil       50000 non-null  object
- 4   Nivel de Estudios  50000 non-null  object
-dtypes: int64(1), object(4)
-memory usage: 1.9+ MB
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. Cantidad total de personas registradas</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Existen </span><span class="si">{:6d}</span><span class="s1"> personas registradas&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">socios</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Existen </span><span class="si">{:6d}</span><span class="s1"> personas registradas</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">socios</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 </pre></div>
 
      </div>
@@ -14128,6 +14096,7 @@ memory usage: 1.9+ MB
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Existen  50000 personas registradas
+
 </pre>
 </div>
 </div>
@@ -14139,12 +14108,12 @@ memory usage: 1.9+ MB
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2. Promedio de edad de los socios de Racing</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Los socios de Racing tienen </span><span class="si">{:5.2f}</span><span class="s1"> años en promedio&#39;</span><span class="o">.</span>\
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Los socios de Racing tienen </span><span class="si">{:5.2f}</span><span class="s1"> años en promedio</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span>\
       <span class="nb">format</span><span class="p">(</span><span class="n">socios</span><span class="p">[</span><span class="n">socios</span><span class="p">[</span><span class="s1">&#39;Equipo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Racing&#39;</span><span class="p">][</span><span class="s1">&#39;Edad&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()))</span>
 </pre></div>
 
@@ -14166,6 +14135,7 @@ memory usage: 1.9+ MB
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Los socios de Racing tienen 43.86 años en promedio
+
 </pre>
 </div>
 </div>
@@ -14174,7 +14144,7 @@ memory usage: 1.9+ MB
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
@@ -14182,77 +14152,13 @@ memory usage: 1.9+ MB
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3. Listado de las primeras 100 personas casadas, con estudios universitarios, ordenadas crecientemente por edad</span>
 
-<span class="n">socios</span><span class="p">[</span><span class="s1">&#39;Nivel de Estudios&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="c1"># socios[&#39;Nivel de Estudios&#39;].value_counts()</span>
+<span class="c1"># socios[&#39;Estado Civil&#39;].value_counts()</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Universitario    16890
-Terciario        16613
-Secundario       16497
-Name: Nivel de Estudios, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">socios</span><span class="p">[</span><span class="s1">&#39;Estado Civil&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Casado     25041
-Soltero    24959
-Name: Estado Civil, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14273,12 +14179,11 @@ Name: Estado Civil, dtype: int64</pre>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bold_start</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[1m&quot;</span>
-<span class="n">bold_end</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\033</span><span class="s2">[0m&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">bold_start</span><span class="si">}{</span><span class="s2">&quot;Nombre&quot;</span><span class="si">:</span><span class="s1">10s</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="s2">&quot;Edad&quot;</span><span class="si">:</span><span class="s1">4s</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="s2">&quot;Equipo&quot;</span><span class="si">}{</span><span class="n">bold_end</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Este es el listado de las primeras 100 personas casadas, con estudios universitarios, ordenadas:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="s2">&quot;Nombre&quot;</span><span class="si">:</span><span class="s1">10s</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="s2">&quot;Edad&quot;</span><span class="si">:</span><span class="s1">4s</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="s2">&quot;Equipo&quot;</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">socios_filtrados</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{:10s}</span><span class="s1"> </span><span class="si">{:4d}</span><span class="s1"> </span><span class="si">{:s}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">socios_filtrados</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,:][</span><span class="s1">&#39;Nombre&#39;</span><span class="p">],</span> <span class="n">socios_filtrados</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,:][</span><span class="s1">&#39;Edad&#39;</span><span class="p">],</span> <span class="n">socios_filtrados</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,:][</span><span class="s1">&#39;Equipo&#39;</span><span class="p">]))</span>
@@ -14301,7 +14206,9 @@ Name: Estado Civil, dtype: int64</pre>
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre><span class="ansi-bold">Nombre     Edad Equipo</span>
+<pre>Este es el listado de las primeras 100 personas casadas, con estudios universitarios, ordenadas:
+
+Nombre     Edad Equipo
 Luis         18 River
 Marcelo      18 Racing
 Juan         18 Gimnasia LP
@@ -14413,11 +14320,11 @@ Juan         18 Velez
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4. Los 5 nombres mas comunes de hinchas de River</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Los 5 nombres más comunes hinchas de River son:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>\
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Los 5 nombres más comunes hinchas de River son:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span>\
       <span class="nb">list</span><span class="p">(</span><span class="n">socios</span><span class="p">[</span><span class="n">socios</span><span class="p">[</span><span class="s1">&#39;Equipo&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;River&#39;</span><span class="p">][</span><span class="s1">&#39;Nombre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
 </pre></div>
 
@@ -14438,7 +14345,8 @@ Juan         18 Velez
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Los 5 nombres más comunes hinchas de River son:
+<pre>
+Los 5 nombres más comunes hinchas de River son:
  [&#39;Daniel&#39;, &#39;Luis&#39;, &#39;Nicolás&#39;, &#39;Matías&#39;, &#39;Martín&#39;]
 </pre>
 </div>
@@ -14451,7 +14359,7 @@ Juan         18 Velez
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5. Listado de cantidad de socios por equipo, ordenados decrecientemente</span>

@@ -43,23 +43,23 @@ socios.columns = ['Nombre', 'Edad', 'Equipo','Estado Civil', 'Nivel de Estudios'
 # In[5]:
 
 
-socios.info()
+# socios.info()
 
 
-# In[6]:
+# In[18]:
 
 
 # 1. Cantidad total de personas registradas
 
-print('Existen {:6d} personas registradas'.format(socios.shape[0]))
+print('Existen {:6d} personas registradas\n'.format(socios.shape[0]))
 
 
-# In[7]:
+# In[17]:
 
 
 # 2. Promedio de edad de los socios de Racing
 
-print('Los socios de Racing tienen {:5.2f} años en promedio'.      format(socios[socios['Equipo'] == 'Racing']['Edad'].mean()))
+print('Los socios de Racing tienen {:5.2f} años en promedio\n'.      format(socios[socios['Equipo'] == 'Racing']['Edad'].mean()))
 
 
 # In[8]:
@@ -67,13 +67,8 @@ print('Los socios de Racing tienen {:5.2f} años en promedio'.      format(socio
 
 # 3. Listado de las primeras 100 personas casadas, con estudios universitarios, ordenadas crecientemente por edad
 
-socios['Nivel de Estudios'].value_counts()
-
-
-# In[9]:
-
-
-socios['Estado Civil'].value_counts()
+# socios['Nivel de Estudios'].value_counts()
+# socios['Estado Civil'].value_counts()
 
 
 # In[10]:
@@ -82,25 +77,24 @@ socios['Estado Civil'].value_counts()
 socios_filtrados = socios[(socios['Estado Civil']=='Casado') & (socios['Nivel de Estudios'] == 'Universitario')]    [['Nombre','Edad','Equipo']].sort_values(by='Edad').head(100)
 
 
-# In[11]:
+# In[23]:
 
 
-bold_start = "\033[1m"
-bold_end = "\033[0m"
-print(f'{bold_start}{"Nombre":10s} {"Edad":4s} {"Equipo"}{bold_end}')
+print("Este es el listado de las primeras 100 personas casadas, con estudios universitarios, ordenadas:\n")
+print(f'{"Nombre":10s} {"Edad":4s} {"Equipo"}')
 
 for i in range(socios_filtrados.shape[0]):
     print('{:10s} {:4d} {:s}'.format(socios_filtrados.iloc[i,:]['Nombre'], socios_filtrados.iloc[i,:]['Edad'], socios_filtrados.iloc[i,:]['Equipo']))
 
 
-# In[12]:
+# In[20]:
 
 
 # 4. Los 5 nombres mas comunes de hinchas de River
-print('Los 5 nombres más comunes hinchas de River son:\n',      list(socios[socios['Equipo'] == 'River']['Nombre'].value_counts().head(5).index))
+print('\nLos 5 nombres más comunes hinchas de River son:\n',      list(socios[socios['Equipo'] == 'River']['Nombre'].value_counts().head(5).index))
 
 
-# In[13]:
+# In[22]:
 
 
 # 5. Listado de cantidad de socios por equipo, ordenados decrecientemente
