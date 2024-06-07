@@ -1,7 +1,7 @@
-# Challenge Recursiva
+# Challenge
 
 ## Overview
-Pequeño análisis del dataset proporcionado, que brinda la información requerida en el archivo "Challenge - Superliga.pdf". Elegí Python para resolver el ejercicio porque estoy bastante familiarizada con la librería Pandas, que es ideal para análisis simples de archivos csv. A continuación detallo varias maneras de poder ver el código y ejecutarlo.
+Pequeño análisis del dataset proporcionado, que brinda la información requerida en el archivo "Challenge.pdf". Elegí Python para resolver el ejercicio porque estoy bastante familiarizada con la librería Pandas, que es ideal para análisis simples de archivos csv. A continuación detallo varias maneras de poder ver el código y ejecutarlo.
 
 ## Jupyter Notebook
 
