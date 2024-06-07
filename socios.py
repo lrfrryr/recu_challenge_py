@@ -99,6 +99,8 @@ print('\nLos 5 nombres más comunes hinchas de River son:\n',      list(socios[s
 
 # 5. Listado de cantidad de socios por equipo, ordenados decrecientemente
 
+print("\nEste es el listado de cantidad de socios por equipo, ordenados decrecientemente:\n")
+
 socios_agg = socios.groupby('Equipo').agg({'Equipo':'count','Edad': ['mean','min','max']}).    sort_values(('Equipo','count'), ascending=False)
 
 socios_agg.columns = ['cantidad', 'edad promedio', 'edad mínima', 'edad máxima']

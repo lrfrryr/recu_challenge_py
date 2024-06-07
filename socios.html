@@ -14359,10 +14359,12 @@ Los 5 nombres más comunes hinchas de River son:
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 5. Listado de cantidad de socios por equipo, ordenados decrecientemente</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Este es el listado de cantidad de socios por equipo, ordenados decrecientemente:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="n">socios_agg</span> <span class="o">=</span> <span class="n">socios</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Equipo&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;Equipo&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">,</span><span class="s1">&#39;Edad&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span><span class="s1">&#39;min&#39;</span><span class="p">,</span><span class="s1">&#39;max&#39;</span><span class="p">]})</span><span class="o">.</span>\
     <span class="n">sort_values</span><span class="p">((</span><span class="s1">&#39;Equipo&#39;</span><span class="p">,</span><span class="s1">&#39;count&#39;</span><span class="p">),</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -14389,7 +14391,10 @@ Los 5 nombres más comunes hinchas de River son:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>                 cantidad  edad promedio  edad mínima  edad máxima
+<pre>
+Este es el listado de cantidad de socios por equipo, ordenados decrecientemente:
+
+                 cantidad  edad promedio  edad mínima  edad máxima
 Equipo                                                            
 Newells              4668          43.57           18           70
 San Lorenzo          4626          44.11           18           70
