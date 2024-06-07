@@ -31,8 +31,8 @@ El script va a leer el archivo csv y outputear el resultado en la terminal.
 ## HTML - No interactivo
 Para ver una versión no interactiva del código (ya corrido y con los resultados) se puede abrir el archivo .html incluído en el repositorio.
 
-## nbviewer - Interactivo
-Para poder ver el notebook de manera interactiva pero sin correrlo localmente se puede visitar este link de nbviewer (una página para compartir notebooks): 
+## Google Colab - Interactivo
+Para poder ver el notebook de manera interactiva pero sin correrlo localmente se puede visitar [este](https://colab.research.google.com/drive/1Nckkgdk7TFeu0ncLj98Xih_golvZD3aL?usp=sharing) link de Google Colab. 
 
 ## Gif
 A continuación incluí un gif de la ejecución:
